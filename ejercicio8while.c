@@ -12,8 +12,8 @@ float comA , comB , comC , comD , comE;
 float comision = 0.25;
 
 
-printf("Ingrese su codigo de vendedor\n");
-scanf("%c", &vendedor);
+/*printf("Ingrese su codigo de vendedor\n");
+scanf("%c", &vendedor);*/
 
 
 for ( int i = 1 ; i <= 5; i++)
