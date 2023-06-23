@@ -23,6 +23,42 @@ SOLO se saldrá de la aplicación si se selecciona la opción 5.*/
 #include <stdlib.h>
 
 void main(){
+int opciones;
+char codigo[20];
+char descripcion[50];
+int cantidad;
+
+
+do
+{ printf("\nMENU\n");
+        printf("1. Cargar productos\n");
+        printf("2. Modificar stock\n");
+        printf("3. Mostrar productos sin stock\n");
+        printf("4. Listar productos\n");
+        printf("5. Salir\n");
+        scanf("%d", &opciones);
+
+        switch (opciones)
+        {
+        case 1:  printf("Ingrese el codigo de barras: ");
+                 scanf("%s", &codigo);
+                    printf("Ingrese la descripcion: ");
+                    scanf(" %s", &descripcion);
+                    printf("Ingrese la cantidad: ");
+                    scanf("%d", &cantidad);
+
+        
+            break;
+        
+        default:
+            break;
+        }
+
+
+} while (opciones!=5);
+
+
+
 
 
 

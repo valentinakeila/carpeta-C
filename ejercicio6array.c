@@ -9,13 +9,13 @@
 
 void main()
 {
-    float array[6];
+    float array[3];
     float promedio;
     float maxFacturacion;
     float minFacturacion;
     float total;
 
-    for (int i = 0; i <= 5; i++)
+    for (int i = 0; i <= 2; i++)
     {
         printf("Ingrese la facturacion del mes %d\n", i+1);
         scanf("%f", &array[i]);
@@ -31,13 +31,17 @@ void main()
         }
         
 
-        if (array[i] > maxFacturacion)
+        if (i == 0)
+        {
+           maxFacturacion = array[0];
+
+        } if (array[i] > maxFacturacion)
         {
             maxFacturacion = array[i];
         }
     }
 
-promedio = total / 6;
+promedio = total / 3;
 
 printf("El promedio de facturacion: %f\n", promedio);
 printf("El minima facturacion es: %f\n", minFacturacion);

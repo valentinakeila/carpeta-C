@@ -28,7 +28,7 @@ void main()
     printf("\nEl total del vector es: %i\n", total_vector);
 
     printf("\nEl contenido de las posiciones impares es:\n");
-    for (int i = 1; i <= 5; i = i + 2)
+    for (int i = 1; i <= 5; i = i+2)
     {
         printf("Indice: %i, Valor: %i\n", i, num_vector[i]);
     }
@@ -45,7 +45,7 @@ void main()
     printf("\nEl mayor n%cmero del vector es:\n", 163);
     for (int i = 0; i <= 5; i++)
     {
-        if (num_vector[i] > mayor_numero)
+        if (num_vector[i] > mayor_numero) // no fue necesario poner el if (i==0) pq ya sabes los valores
         {
             mayor_numero = num_vector[i];
         }
